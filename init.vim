@@ -1,3 +1,30 @@
+" encoding
+set encoding=utf-8
+scriptencoding utf-8
+
+" row-number
+set number
+
+" indent & tab
+set expandtab
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smartindent
+
+" search
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
+" jump
+set showmatch
+
+" command
+set wildmenu
+
 " dein -----------
 if !&compatible
 	set nocompatible
@@ -5,7 +32,7 @@ endif
 
 "" dein settings {{{
 """ dein auto install
-let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
+let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.config/nvim') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if !isdirectory(s:dein_repo_dir)
@@ -25,3 +52,4 @@ if has('vim_starting') && dein#check_install()
 	call dein#install()
 endif
 "" }}}
+"dein -----------

@@ -1,0 +1,20 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # Toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]] # Emmet
+repo = 'mattn/emmet-vim'
+
+[[plugins]] # LSP
+repo = 'prabirshrestha/async.vim'
+repo = 'prabirshrestha/asyncomplete.vim'
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+repo = 'prabirshrestha/vim-lsp'
+
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]] # Go
+repo = 'mattn/vim-imports'
